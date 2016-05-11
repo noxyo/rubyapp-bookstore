@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"he",
+				"header	Tag"
+			],
+			[
+				"link",
+				"link_to"
+			],
+			[
+				"rese",
+				"resources"
+			],
+			[
 				"feed",
 				"feedparser"
 			],
@@ -16,26 +44,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/about_controller.rb",
+			"contents": "<ul class=\"nav navbar-nav\">\n            <li class=\"active\"><%= link_to 'Home', root_path%></li>\n            <li><%= link_to 'About', about_path%></li>\n            <li class=\"dropdown\">\n          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Add New <span class=\"caret\"></span></a>\n          <ul class=\"dropdown-menu navbar-right\">\n            <li><%= link_to \"Book\", new_book_path %></li>\n            <li><%= link_to \"Category\", new_category_path %></li>\n            <li><%= link_to \"Author\", new_author_path %></li>\n            <li><%= link_to \"Publisher\", new_publisher_path %></li>\n          </ul>\n        </li>\n          </ul>",
 			"settings":
 			{
-				"buffer_size": 97,
+				"buffer_size": 700,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/about/index.html.erb",
+			"file": "app/views/books/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 1340,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 2294,
+				"buffer_size": 678,
 				"line_ending": "Unix"
 			}
 		}
@@ -73,14 +93,18 @@
 	"expanded_folders":
 	[
 		"/home/resident/Rubies/projects/bookstore",
-		"/home/resident/Rubies/projects/bookstore/app/assets",
-		"/home/resident/Rubies/projects/bookstore/app/controllers",
+		"/home/resident/Rubies/projects/bookstore/app",
 		"/home/resident/Rubies/projects/bookstore/app/views",
-		"/home/resident/Rubies/projects/bookstore/app/views/authors",
-		"/home/resident/Rubies/projects/bookstore/config"
+		"/home/resident/Rubies/projects/bookstore/app/views/books"
 	],
 	"file_history":
 	[
+		"/home/resident/Rubies/projects/bookstore/app/assets/stylesheets/application.css",
+		"/home/resident/Rubies/projects/bookstore/app/views/layouts/application.html.erb",
+		"/home/resident/Rubies/projects/bookstore/config/routes.rb",
+		"/home/resident/Rubies/projects/bookstore/app/views/partials/_sidebar.html.erb",
+		"/home/resident/Rubies/projects/bookstore/app/views/about/index.html.erb",
+		"/home/resident/Rubies/projects/bookstore/app/controllers/about_controller.rb",
 		"/home/resident/Rubies/projects/instructions_nfo.txt",
 		"/home/resident/Rubies/projects/bookstore/Gemfile",
 		"/home/resident/Rubies/projects/bookstore/config/database.yml",
@@ -92,7 +116,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -125,57 +149,30 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/about_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 97,
+						"buffer_size": 700,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								86,
-								86
+								700,
+								700
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/about/index.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1340,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1340,
-								1340
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -185,27 +182,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "config/routes.rb",
-					"semi_transient": true,
+					"buffer": 1,
+					"file": "app/views/books/index.html.erb",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2294,
+						"buffer_size": 678,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								109,
-								109
+								296,
+								296
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -219,11 +214,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 32.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"layout":
 	{
@@ -256,7 +251,7 @@
 	"project": "bookstore.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":

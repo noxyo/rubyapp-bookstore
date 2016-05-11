@@ -1,0 +1,65 @@
+
+
+1) Install Apache server
+
+>	sudo apt-get install lamp-server^ 
+
+MySQL Root Password:	password
+
+
+
+>	mysql -u root -p
+
+
+
+>	grant all on bookstore_development.* to 'bookstore'@'localhost' IDENTIFIED BY "pass1";
+
+>	grant all on bookstore_test.* to 'bookstore'@'localhost' IDENTIFIED BY "pass1";
+
+2) Install MySQL dev Client
+
+>	sudo apt-get install libmysqlclient-dev
+
+3) Install PHP MyAdmin
+
+>	sudo apt-get install phpmyadmin
+
+	)apache2
+	)Sim
+	)MySQL Root Password:	password
+	)						password
+
+
+
+4) Restart apache
+
+>	sudo service apache2 restart
+
+sudo apt-get install php-mbstring php7.0-mbstring php-gettext
+sudo service apache2 restart
+
+5) Login PHP MyAdmin
+
+	root
+	password
+
+6) Install Gem's
+
+>	gem install mysql2
+>	gem install therubyracer
+>	gem install libv8 --version=3.11.8.3
+>	gem install execjs
+
+
+--------------------
+
+7) Iniciar Criação do Projecto "Bookstore"
+
+>	rails new bookstore
+
+	run: bundle install
+
+
+
+username: bookstore
+password: pass1
