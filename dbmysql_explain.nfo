@@ -31,3 +31,19 @@ Commands to generate MySQL Database:
   > rails g model publisher name:string
 
   > rake db:migrate
+
+
+
+  Comandos Git Para Update
+
+  > git add dbmysql_explain.nfo 
+  > git add instructions_nfo.txt 
+  > git add README.md 
+  > git add bookstore/*
+  > git commit -m "Bookstore Application - Models & DB Tables #1"
+  > git push -u origin master
+        $ Username for 'https://github.com': noxyo
+        $ Password for 'https://noxyo@github.com': 
+  > git status
+
+
