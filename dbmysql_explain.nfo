@@ -1,0 +1,33 @@
+
+
+
+Commands to generate MySQL Database:
+
+  > rails     g        model   category    name:string
+          (generator)           (table)    (field:type)
+
+  > rake db:migrate           
+
+  --
+
+  > rails g model book title:string category_id:integer author_id:integer publisher_id:integer isbn:string year:string prince:string buy:string excerpt:text format:string pages:integer
+
+  > rake db:migrate
+
+[NOTA]: 
+    em caso de erro e escrever "books" em vez de "book" (singular), é 
+    só trocar no comando o 'g' (generator) por 'd' (destroy), apagar a tabela
+    pelo PHPMyAdmin e correr o "rake db:migrate"
+
+
+  ---
+
+  >  rails g model author first_name:string last_name:string
+
+  > rake db:migrate
+
+  ---
+
+  > rails g model publisher name:string
+
+  > rake db:migrate

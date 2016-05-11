@@ -63,3 +63,16 @@ sudo service apache2 restart
 
 username: bookstore
 password: pass1
+
+
+
+
+
+====================
+Editar no Futuro
+
+
+.Books 		=> Festivais(Eventos)
+	..Category 	=> Indoor/Outdoor
+	..Author 	=> Produção(Empresa)
+	..Publisher 	=> Género
