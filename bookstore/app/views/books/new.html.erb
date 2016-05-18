@@ -14,23 +14,33 @@
 
 	<div class="form-group">   <%# Book: Category %>
 		<%= f.label :category %><br />    <%# Select Box with categories list %>
-		<%= f.text_field :category_id, Category.all.collect {|x| [x.name,x.id]}, {:include_blank => 'Select One'},class:'form-control' %><br />
+		<%= f.select :category_id, Category.all.collect {|x| [x.name,x.id]}, {:include_blank => 'Select One'},class:'form-control' %><br />
 	</div>
 
 	<div class="form-group">   <%# Book: Author %>
 		<%= f.label :author %><br />    <%# Select Box with authors list %>
-		<%= f.text_field :author_id, Author.all.collect {|x| [x.name,x.id]}, {:include_blank => 'Select One'},class:'form-control' %><br />
+		<%= f.select :author_id, Author.all.collect {|x| [x.first_name + ' ' + x.last_name, x.id]}, {:include_blank => 'Select One'},class:'form-control' %><br />
 	</div>
 
 	<div class="form-group">   <%# Book: Publisher %>
 		<%= f.label :publisher %><br />    <%# Select Box with publishers list %>
-		<%= f.text_field :publisher_id, Publisher.all.collect {|x| [x.name,x.id]}, {:include_blank => 'Select One'},class:'form-control' %><br />
+		<%= f.select :publisher_id, Publisher.all.collect {|x| [x.name,x.id]}, {:include_blank => 'Select One'},class:'form-control' %><br />
 	</div>
 
 	<div class="form-group">   <%# Book: format %>
 		<%= f.label :format %><br />
 		<%= f.text_field :format, class:'form-control' %><br />
-	</div>	
+	</div>
+
+	<div class="form-group">   <%# Book: format %>
+		<%= f.label :year %><br />
+		<%= f.text_field :year, class:'form-control' %><br />
+	</div>
+
+	<div class="form-group">   <%# Book: format %>
+		<%= f.label :coverpath %><br />
+		<%= f.text_field :coverpath, class:'form-control' %><br />
+	</div>
 
 	<div class="form-group">   <%# Book: excerpt %>
 		<%= f.label :excerpt %><br />
@@ -54,8 +64,5 @@
 
 	<%= f.submit "Submit", class:'btn btn-primary' %><br />
 	<%= link_to "Cancel", books_path, class:'btn btn-default' %>
-
-
-
 
 <% end %>
